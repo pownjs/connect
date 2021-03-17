@@ -1,12 +1,12 @@
 [![Follow on Twitter](https://img.shields.io/twitter/follow/pownjs.svg?logo=twitter)](https://twitter.com/pownjs)
-![NPM](https://img.shields.io/npm/v/@pown/request.svg)
+![NPM](https://img.shields.io/npm/v/@pown/connect.svg)
 [![Fury](https://img.shields.io/badge/version-2x%20Fury-red.svg)](https://github.com/pownjs/lobby)
 ![default workflow](https://github.com/pownjs/leaks/actions/workflows/default.yaml/badge.svg)
 [![SecApps](https://img.shields.io/badge/credits-SecApps-black.svg)](https://secapps.com)
 
-# Pown Request
+# Pown Connect
 
-This is a simple library and pownjs command for performing requests. This module comes with its own Scheduler.
+This is a simple library and pownjs command for performing connects. This module comes with its own Scheduler.
 
 ## Credits
 
@@ -34,16 +34,16 @@ Install Pown first as usual:
 $ npm install -g pown@latest
 ```
 
-Install request:
+Install connect:
 
 ```sh
-$ pown modules install @pown/request
+$ pown modules install @pown/connect
 ```
 
 Invoke directly from Pown:
 
 ```sh
-$ pown request
+$ pown connect
 ```
 
 ### Standalone Use
@@ -51,19 +51,19 @@ $ pown request
 Install this module locally from the root of your project:
 
 ```sh
-$ npm install @pown/request --save
+$ npm install @pown/connect --save
 ```
 
 Once done, invoke pown cli:
 
 ```sh
-$ POWN_ROOT=. ./node_modules/.bin/pown-cli request
+$ POWN_ROOT=. ./node_modules/.bin/pown-cli connect
 ```
 
 You can also use the global pown to invoke the tool locally:
 
 ```sh
-$ POWN_ROOT=. pown request
+$ POWN_ROOT=. pown connect
 ```
 
 ## Usage
@@ -71,24 +71,4 @@ $ POWN_ROOT=. pown request
 > **WARNING**: This pown command is currently under development and as a result will be subject to breaking changes.
 
 ```
-pown-cli request [url]
-
-Send requests
-
-Options:
-  --version                                                 Show version number  [boolean]
-  --help                                                    Show help  [boolean]
-  --url-prefix                                              Add prefix to each url  [string]
-  --url-suffix                                              Add suffix to each url  [string]
-  --proxy-url, --proxy                                      Setup proxy  [string] [default: ""]
-  --filter-response-code, --response-code, --filter-status  Filter responses with code  [string] [default: ""]
-  --content-sniff-size, --content-sniff, --sniff-size       Specify the size of the content sniff  [number] [default: 5]
-  --print-response-body, --print-body                       Print response body  [boolean] [default: false]
-  --download-response-body, --download-body                 Download response body  [boolean] [default: false]
-  --method, -X                                              Custom method  [string]
-  --header, -H                                              Custom header  [string]
-  --connect-timeout, -t, --timeout                          Maximum time allowed for connection  [number] [default: 30000]
-  --accept-unauthorized, -k, --insecure                     Accept unauthorized TLS errors  [boolean] [default: false]
-  --request-concurrency, -c                                 The number of requests to send at the same time  [number] [default: Infinity]
-  --task-concurrency, -C                                    The number of request tasks to run at the same time  [number] [default: Infinity]
 ```
