@@ -6,7 +6,6 @@
   "scripts": {
     "connect": "POWN_ROOT=. pown-cli connect",
     "usage": "POWN_ROOT=. pown-cli connect --help",
-    "usage": "true",
     "build": "true",
     "test": "true"
   },
