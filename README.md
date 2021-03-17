@@ -71,5 +71,21 @@ $ POWN_ROOT=. pown connect
 > **WARNING**: This pown command is currently under development and as a result will be subject to breaking changes.
 
 ```
+pown-cli connect [address]
 
+Connect to addreess
+
+Options:
+  --version                                            Show version number  [boolean]
+  --help                                               Show help  [boolean]
+  --content-sniff-size, --content-sniff, --sniff-size  Specify the size of the content sniff  [number] [default: 5]
+  --print-response-data, --print-data                  Print response data  [boolean] [default: false]
+  --download-response-data, --download-data            Download response data  [boolean] [default: false]
+  --connect-timeout, -t, --timeout                     Maximum time allowed for connection  [number] [default: 30000]
+  --data-timeout, -T                                   Maximum time allowed for connection  [number] [default: 30000]
+  --accept-unauthorized, -k, --insecure                Accept unauthorized TLS errors  [boolean] [default: false]
+  --connect-concurrency, -c                            The number of connections to open at the same time  [number] [default: Infinity]
+  --task-concurrency, -C                               The number of connect tasks to run at the same time  [number] [default: Infinity]
+  --data, -d                                           Data to send  [string]
+  --json-data, -D                                      Data to send (json encoded string)  [string]
 ```
