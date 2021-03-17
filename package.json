@@ -4,7 +4,8 @@
   "description": "Pownage guaranteed",
   "main": "lib/index.js",
   "scripts": {
-    "connect": "true",
+    "connect": "POWN_ROOT=. pown-cli connect",
+    "usage": "POWN_ROOT=. pown-cli connect --help",
     "usage": "true",
     "build": "true",
     "test": "true"
@@ -39,7 +40,11 @@
     "is-gzip": "^2.0.0",
     "performance-now": "^2.1.0"
   },
-  "pown": {},
+  "pown": {
+    "commands": [
+      "commands/connect"
+    ]
+  },
   "browserify": {
     "transform": [
       [
