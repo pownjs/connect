@@ -1,0 +1,53 @@
+{
+  "name": "@pown/connect",
+  "version": "2.0.0",
+  "description": "Pownage guaranteed",
+  "main": "lib/index.js",
+  "scripts": {
+    "connect": "true",
+    "usage": "true",
+    "build": "true",
+    "test": "true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pownjs/pown-connect.git"
+  },
+  "keywords": [
+    "exploit",
+    "framework"
+  ],
+  "author": "pdp <pdp@gnucitizen.org>",
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pownjs/pown-connect/issues"
+  },
+  "homepage": "https://github.com/pownjs/pown-connect#readme",
+  "peerDependencies": {
+    "@pown/async": "^2.11.0",
+    "@pown/cli": "^2.29.0"
+  },
+  "devDependencies": {
+    "@pown/toolchain": "^2.1.0",
+    "@pown/async": "^2.11.0",
+    "@pown/cli": "^2.29.0"
+  },
+  "dependencies": {
+    "bottleneck": "^2.19.5",
+    "is-deflate": "^1.0.0",
+    "is-gzip": "^2.0.0",
+    "performance-now": "^2.1.0"
+  },
+  "pown": {},
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "extends": "./.babelrc"
+        }
+      ]
+    ]
+  }
+}
