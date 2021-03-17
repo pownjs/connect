@@ -6,7 +6,7 @@
 
 # Pown Connect
 
-This is a simple library and pownjs command for performing connects. This module comes with its own Scheduler.
+This is a simple, high-level library and pownjs command for making raw, TCP connections. This module comes with its own Scheduler.
 
 ## Credits
 
@@ -71,4 +71,5 @@ $ POWN_ROOT=. pown connect
 > **WARNING**: This pown command is currently under development and as a result will be subject to breaking changes.
 
 ```
+
 ```
