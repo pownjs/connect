@@ -84,6 +84,7 @@ Options:
   --connect-timeout, -t, --timeout                     Maximum time allowed for connection  [number] [default: 30000]
   --data-timeout, -T                                   Maximum time allowed for connection  [number] [default: 30000]
   --accept-unauthorized, -k, --insecure                Accept unauthorized TLS errors  [boolean] [default: false]
+  --tls                                                Connect with TLS  [boolean] [default: false]
   --connect-concurrency, -c                            The number of connections to open at the same time  [number] [default: Infinity]
   --task-concurrency, -C                               The number of connect tasks to run at the same time  [number] [default: Infinity]
   --data, -d                                           Data to send  [string]
