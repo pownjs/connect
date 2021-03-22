@@ -18,5 +18,12 @@ module.exports = {
         type: 'boolean',
         describe: 'Accept unauthorized TLS errors',
         default: false
+    },
+
+    'tls': {
+        alias: [],
+        type: 'boolean',
+        describe: 'Connect with TLS',
+        default: false
     }
 }

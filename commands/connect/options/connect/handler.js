@@ -1,5 +1,5 @@
 const init = (options, scheduler) => {
-    const { connectTimeout, dataTimeout, acceptAnauthorized } = options
+    const { connectTimeout, dataTimeout, acceptAnauthorized, tls } = options
 
     if (connectTimeout) {
         scheduler.on('connect-scheduled', (connect) => {
@@ -15,6 +15,7 @@ const init = (options, scheduler) => {
 
     scheduler.on('connect-scheduled', (connect) => {
         connect.rejectUnauthorized = !acceptAnauthorized
+        connect.tls = tls
     })
 }
 
