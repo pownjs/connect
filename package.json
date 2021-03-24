@@ -29,9 +29,9 @@
     "@pown/cli": "^2.29.0"
   },
   "devDependencies": {
-    "@pown/toolchain": "^2.1.0",
     "@pown/async": "^2.11.0",
-    "@pown/cli": "^2.29.0"
+    "@pown/cli": "^2.30.0",
+    "@pown/toolchain": "^2.1.0"
   },
   "dependencies": {
     "bottleneck": "^2.19.5",
