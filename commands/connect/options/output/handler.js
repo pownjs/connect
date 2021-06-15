@@ -7,11 +7,11 @@ const init = (options, scheduler) => {
     const { contentSniffSize, printResponseData, downloadResponseData } = options
 
     scheduler.on('connect-finished', (request, response) => {
-        const { host, port, responseData } = response
+        const { host, port, responseData, info } = response
 
         const responseDataSniff = responseData.slice(0, contentSniffSize).toString('base64')
 
-        console.info(`${host}:${port} -> ${responseData.length} ${responseDataSniff ? responseDataSniff : '-'}`)
+        console.info(`${host}:${port} -> ${info.open ? 'open' : 'closed'} ${responseData.length} ${responseDataSniff ? responseDataSniff : '-'}`)
 
         if (printResponseData) {
             console.log(responseData.toString())
