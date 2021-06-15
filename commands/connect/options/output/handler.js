@@ -9,7 +9,7 @@ const init = (options, scheduler) => {
     scheduler.on('connect-finished', (request, response) => {
         const { host, port, responseData } = response
 
-        const responseDataSniff = responseData.slice(0, contentSniffSize).toString('hex')
+        const responseDataSniff = responseData.slice(0, contentSniffSize).toString('base64')
 
         console.info(`${host}:${port} -> ${responseData.length} ${responseDataSniff ? responseDataSniff : '-'}`)
 
